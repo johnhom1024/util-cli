@@ -1,0 +1,19 @@
+{
+  "name": "my-node-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "myutil": "./bin/cli.js",
+    "cli": "./lib/cli.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "inquirer": "^8.2.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^9.0.0",
+    "didyoumean": "^1.2.2",
+    "fs-extra": "^10.0.1"
+  }
+}
