@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "bin": {
-    "myutil": "./bin/cli.js",
-    "cli": "./lib/cli.js"
+    "util": "./bin/cli.js"
   },
   "license": "MIT",
   "devDependencies": {
