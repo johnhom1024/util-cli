@@ -8,16 +8,24 @@
 // 用于检查入口文件是否正常执行
 
 const program = require('commander');
+// 初始化文件
+require('../lib/bootstrap');
 
 program
   // 定义命令和参数
-  .command('create <app-name>')
-  .description('create a new project')
-  // -f or --force 为强制创建，如果创建的目录存在则直接覆盖
-  .option('-f, --force', 'overwrite target directory if it exist')
+  .command('record')
+  .description('record a project name and path')
   .action((name, options) => {
-    // 打印执行结果
-    console.log('name:',name,'options:',options)
+    const record = require('../lib/record');
+    record();
+  })
+
+program
+  .command('open <project-name>')
+  .description('open the project that has been recorded')
+  .action((projectName) => {
+    const open = require('../lib/open')
+    open(projectName)
   })
   
 program
@@ -25,3 +33,5 @@ program
   .version(`v${require('../package.json').version}`)
   .usage('<command> [option]')
 
+// 用于解析process.argv，设置options以及触发commands
+program.parse(process.argv)
