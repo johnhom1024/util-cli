@@ -1,4 +1,4 @@
-# node-cli-uitl
+# node-cli-util
 
 > 一个用于记录项目路径，快速使用vscode打开项目的cli工具
 
