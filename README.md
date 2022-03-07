@@ -26,5 +26,44 @@ util record
 2. 使用vscode打开记录的项目文件夹
 
 ```
-util open <project-name>
+util open
 ```
+
+## 示例
+
+1. 首先演示使用`util record`命令
+
+```
+➜  ~ util record
+
+? Input your project name yueke-uniapp
+? Input your project path ~/backup/fk/md-project/yueke-uniapp
+使用vscode打开该目录：~/backup/fk/md-project/yueke-uniapp
+启动中...
+启动完毕
+? 请确认是否打开了正确的目录 Yes
+{
+  'yueke-uniapp': '~/backup/fk/md-project/yueke-uniapp'
+}
+配置文件夹目录为：/Volumes/Backup/achieve/node-project/my-node-cli/project-info.json
+配置保存成功！以后可以通过使用命令：
+ util open yueke-uniapp
+这个命令将会使用vscode打开这个项目文件夹
+```
+
+2. 使用``util open`打开记录的项目
+
+```
+➜  ~ util open
+? selectProjectName: (Use arrow keys)
+❯ yueke-web
+  myueke-uniapp
+  yueke-uniapp
+? selectProjectName: yueke-uniapp
+正在使用vscode打开 yueke-uniapp...
+启动完毕
+```
+
+## TODO
+
+- [] 使用ts + eslint对项目进行改造
