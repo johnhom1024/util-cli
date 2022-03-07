@@ -8,7 +8,7 @@
 // 用于检查入口文件是否正常执行
 
 const program = require('commander');
-// 初始化文件
+// 初始化配置文件
 require('../lib/bootstrap');
 
 program
@@ -21,7 +21,7 @@ program
   })
 
 program
-  .command('open <project-name>')
+  .command('open [project-name]')
   .description('open the project that has been recorded')
   .action((projectName) => {
     const open = require('../lib/open')
