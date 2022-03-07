@@ -51,7 +51,7 @@ util open
 这个命令将会使用vscode打开这个项目文件夹
 ```
 
-2. 使用``util open`打开记录的项目
+2. 使用`util open`打开记录的项目
 
 ```
 ➜  ~ util open
