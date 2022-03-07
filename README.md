@@ -66,4 +66,4 @@ util open
 
 ## TODO
 
-- [] 使用ts + eslint对项目进行改造
+- [ ] 使用ts + eslint对项目进行改造
