@@ -1,4 +1,4 @@
-# node-cli-util
+# util-cli
 
 > 一个用于记录项目路径，快速使用vscode打开项目的cli工具
 
@@ -6,7 +6,7 @@
 
 ```
 # 拷贝本项目到你的电脑中
-git clone https://github.com/johnhom1024/node-cli-util.git
+git clone https://github.com/johnhom1024/util-cli.git
 
 # 安装依赖
 npm install # 或者 yarn install
