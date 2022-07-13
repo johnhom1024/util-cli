@@ -13,6 +13,9 @@ npm install # 或者 yarn install
 
 # 链接到全局命令中
 npm link # 或者 yarn link
+
+# 如果遇到permission denied，则修改./bin/cli.js文件为可执行文件
+chmod +x ./bin/cli.js
 ```
 
 ## 使用
